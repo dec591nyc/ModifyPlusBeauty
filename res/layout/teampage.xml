@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"	
+    android:orientation="vertical"
+	android:background="@drawable/suse" >
+	
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  "
+        android:textSize="15sp" />
+    
+    <TextView
+        android:id="@+id/titleshow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="小組介紹："
+        android:textSize="18sp" />
+    
+    <TextView
+        android:id="@+id/textshow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text=" 隨著現在智慧型手機的普遍化，APP Store上優化圖片的軟體琳瑯滿目。\n越來越多年輕人因為攜帶的方便，往往帶著手機就出門去攝影留念，但是回到家才發現有許多照片因為拍攝時光線不夠好，造成可能拍出來的照片是看的到左半邊的臉，而右半邊的臉因為陰影而有看不清楚的問題。\n HDR(高動態範圍成像)現在成了攝影中不可或缺的強大功能，因為看見這塊問題的存在，所以我們選擇這個領域作為畢業專題的題目，也盡我們所能寫出不錯的修圖軟體！！　：）"
+        android:textSize="15sp" />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  "
+        android:textSize="15sp" />
+    
+    <TextView
+        android:id="@+id/titleshow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="開發成員："
+        android:textSize="18sp" />
+    
+    <TextView
+        android:id="@+id/textshow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text=" 黃智偉、何信俞、粘耿彰、曾毓盛、許晉綱。"
+        android:textSize="15sp" />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  "
+        android:textSize="15sp" />
+    
+    <TextView
+        android:id="@+id/titleshow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="聯絡方式："
+        android:textSize="18sp" />
+    
+    <TextView
+        android:id="@+id/textshow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text=" Email:poolikujm123@hotmail.com"
+        android:textSize="15sp" />
+
+</LinearLayout>

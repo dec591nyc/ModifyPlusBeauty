@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/suse"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/BackToEdit"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/home"
+                    android:onClick="onBtn"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/save"
+                    android:onClick="onSave"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/oriimg"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ori"
+                    android:onClick="onOriimg"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/share"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/share"
+                    android:onClick="onShare"
+                    android:textSize="12dp" />
+               
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/no"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.95"
+        android:scaleType="centerInside" />
+   
+     <TextView
+        android:id="@+id/outno"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp" />  
+    
+    <LinearLayout
+        android:id="@+id/Freelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+    
+        <LinearLayout
+            android:id="@+id/layoutofBlock1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text=" Slope:"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/no0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/Lch_L1"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom"
+                    android:text="3"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/no1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/Lch_L2"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom"
+                    android:text="4.5"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/Lch_L3"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom"
+                    android:text="6"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/no3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>    
+        
+    </LinearLayout>
+         <LinearLayout
+            android:id="@+id/layoutofBlock2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+             android:visibility="gone"
+            > 
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text=" Slope:"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/b_no0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/Lch_C1"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom"
+                    android:text="3"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/b_no1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/Lch_C2"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom"
+                    android:text="4.5"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/b_no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/b_no3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/Lch_C3"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom"
+                    android:text="6"
+                    android:textSize="16dp" />
+            </LinearLayout>
+    
+    </LinearLayout>
+    </LinearLayout>
+    
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text=" YUV:"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/S_no1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/ButofYv"
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom"
+                        android:text="亮度增強"
+                        android:background="@drawable/lch"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/S_no2"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/ButofHist"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/lch"
+                        android:text="一般"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text=" LCH:"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/S_no3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/ButofLv"
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/lch"
+                        android:text="明度增強"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/S_no4"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/ButofCv"
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/lch"
+                        android:text="彩度增強"
+                        android:textSize="16dp" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+</LinearLayout>

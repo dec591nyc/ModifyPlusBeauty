@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/suse"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/BackToEdit"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/home"
+                    android:onClick="onBtn"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/save"
+                    android:onClick="onSave"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/oriimg"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ori"
+                    android:onClick="onOriimg"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/share"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/share"
+                    android:onClick="onShare"
+                    android:textSize="12dp" />                
+               
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/no"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"/>
+    
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:scaleType="centerInside"/>
+    
+    <TextView
+        android:id="@+id/no1"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp" />
+    
+    <LinearLayout
+        android:id="@+id/Freelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="99dp"
+        android:orientation="horizontal" >
+        
+        <LinearLayout
+            android:id="@+id/layoutofHDR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/layoutButofGamma"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text=" Gamma："
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/lowkey"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom"
+                        android:text="0.4"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/no2"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/midkey"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom"
+                        android:text="0.8"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/no3"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/highkey"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom"
+                        android:text="1.2"
+                        android:textSize="16dp" />
+                    
+                    <TextView
+                        android:id="@+id/no4"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/morekey"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom"
+                        android:text="1.6"
+                        android:textSize="16dp" />
+                    
+                    <TextView
+                        android:id="@+id/no5"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/moreskey"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom"
+                        android:text="2.0"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+            </HorizontalScrollView>
+            
+    	</LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/layoutofTone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:visibility="gone">
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   飽和度 "
+            android:textSize="20dp"/>
+
+        <SeekBar
+            android:id="@+id/satura"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:max="200"
+            android:progress="100" />
+
+        <TextView
+            android:id="@+id/Saturationseekbarvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="0"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   亮度     "
+            android:textSize="20dp"/>
+
+        <SeekBar
+            android:id="@+id/bright"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:max="200"
+            android:progress="100" />
+
+        <TextView
+            android:id="@+id/Brightnessseekbarvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="0"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   對比度 "
+            android:textSize="20dp"/>
+
+        <SeekBar
+            android:id="@+id/contrast"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:max="200"
+            android:progress="100" />
+
+        <TextView
+            android:id="@+id/Contrastseekbarvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="0"
+            android:textSize="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+             android:id="@+id/layoutofRotate"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:gravity="center_vertical"
+             android:orientation="horizontal" 
+             android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/left"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="↺"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/right"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="↻"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="⇅"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="⇄"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/layoutofEffect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" 
+        android:visibility="gone" >
+    
+    <HorizontalScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+       <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical" >
+                
+        <Button
+            android:background="@drawable/lomo"
+            android:id="@+id/lomo"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="12dp" />
+
+        <Button
+            android:background="@drawable/old"
+            android:id="@+id/old"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="12dp" />
+
+        <Button
+            android:background="@drawable/cartoon"
+            android:id="@+id/comic"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="12dp" />
+        
+        <Button
+            android:background="@drawable/neno"
+            android:id="@+id/landscape"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="12dp" />
+
+        <Button
+            android:background="@drawable/miro"
+            android:id="@+id/whitening"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="12dp" />               
+        
+        <Button
+            android:background="@drawable/anti_color"
+            android:id="@+id/halo"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="12dp" />
+        
+        <Button
+            android:background="@drawable/sketch"
+            android:id="@+id/dim"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="12dp" />
+        
+        <Button
+            android:background="@drawable/bw"
+            android:id="@+id/bw"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="12dp" />
+        
+        <Button
+            android:background="@drawable/oil"
+            android:id="@+id/fire"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="12dp" />
+
+        <Button
+            android:background="@drawable/soft"
+            android:id="@+id/cold"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="12dp" />
+        
+        <Button
+            android:background="@drawable/sharp"
+            android:id="@+id/sharp"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="12dp" />
+       </LinearLayout>
+	</HorizontalScrollView>
+	</LinearLayout>
+	
+    <LinearLayout
+        android:id="@+id/layoutofCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" 
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/layoutsize"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+       
+        <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="bottom"
+             android:text=" 尺寸："
+             android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/twoich"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:text="1吋"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/fourich"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:text="2吋"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/thrfiv"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:text="3*5吋"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/fousix"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:text="4*6吋"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/layoutcrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+        
+          	<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 剪裁："
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/one"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:text="1:1"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/three"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:text="3:2"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/four"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:text="4:3"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/two"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:text="2:3"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/threef"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:text="3:4"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/fourteen"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:text="16:9"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+	</LinearLayout>
+    
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/ScrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+       <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+        <Button
+           android:background="@drawable/take"
+           android:id="@+id/pickimv"
+           android:layout_width="60dp"
+           android:layout_height="50dp"
+           android:onClick="onPick"
+           android:text=""
+           android:textSize="12sp" />
+        
+        <Button
+            android:background="@drawable/gammachange"
+            android:id="@+id/hdr"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:textSize="12sp" />
+
+        <Button
+            android:background="@drawable/tone"
+            android:id="@+id/tone"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:textSize="12sp" />
+        
+        <Button
+            android:background="@drawable/move"
+            android:id="@+id/rotate"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:textSize="12sp" />
+
+        <Button
+            android:background="@drawable/effect"
+            android:id="@+id/effect"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:textSize="12sp" />
+        
+        <Button
+            android:background="@drawable/crop"
+            android:id="@+id/crop"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:textSize="12sp" />
+        
+                  
+		</LinearLayout>
+	</HorizontalScrollView>
+</LinearLayout>

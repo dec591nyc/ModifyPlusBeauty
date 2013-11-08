@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Modifoto Plus Beauty</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title">處理中...</string>
+    <string name="Ytext">強化每個Luminance(亮度)區塊中。請待片刻...</string>
+    <string name="Htext">Histogram均衡處理中。請待片刻...</string>
+    <string name="Ltext">切割多個均衡大小的直方圖並拉伸對比度的強度,最後強化每個Lightness(亮度)區塊中,請待片刻...</string>
+    <string name="L1text">限制了對比度拉伸的強度傳遞函數，並強化每個Lightness(亮度)區塊中。請待片刻...</string>
+    <string name="Ctext">切割多個均衡大小的直方圖並拉伸對比度的強度，最後強化每個Chroma(色度)區塊中。請待片刻...</string>
+    <string name="C1text">限制了對比度拉伸的強度傳遞函數,並強化每個Chroma(色度)區塊中,請待片刻...</string>
+
+    
+   
+
+</resources>
